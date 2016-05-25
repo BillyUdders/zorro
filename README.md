@@ -1,7 +1,7 @@
 # zorro
 ZSH Plugin repo...
 
-Mkdir .zsh.plugins and add this to your ~/.zshrc: 
+Mkdir .zsh.plugins, clone this into it and add this to your ~/.zshrc: 
 
 	if [[ -s "${ZDOTDIR:-$HOME}/.zsh.plugins/init.zsh" ]]; then
 	   source "${ZDOTDIR:-$HOME}/.zsh.plugins/init.zsh"

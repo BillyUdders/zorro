@@ -28,8 +28,6 @@ fi
 #######################
 # Maven
 if which mvn >/dev/null 2>&1; then
-  alias mvn='mvn-color'
-
    mvnrun () {
      echo  mvn $@
      eval  mvn $@
@@ -53,3 +51,6 @@ if which brew >/dev/null 2>&1; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+if which aws >/dev/null 2>&1; then
+  source /usr/local/share/zsh/site-functions/_aws
+fi

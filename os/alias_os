@@ -1,0 +1,9 @@
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    source `dirname $0`/darwin/init.zsh
+fi
+
+if [[ "$LSB_DISTRIBUTION" == "Ubuntu" ]]; then
+    source `dirname $0`/linux/init.zsh
+elif [[ "$LSB_DISTRIBUTION" == "arch"* ]]; then
+    source `dirname $0`/linux/init.zsh
+fi

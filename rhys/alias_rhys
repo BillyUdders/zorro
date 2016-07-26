@@ -13,7 +13,7 @@ alias gs='git status'
 alias mud='git remote update && git merge upstream/develop'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias zshr='source ~/.zshrc'
-alias l='la'
+alias l='LC_COLLATE=C la'
 
 #####################
 # We are all douchebags sometimes, just deal with it...
@@ -41,4 +41,3 @@ bindkey '^R' history-incremental-search-backward
 if which docker-machine >/dev/null 2>&1 && [ ! -z "$PS1" ] && docker-machine status dev|grep -q Running; then
   eval $(docker-machine env dev)
 fi
-

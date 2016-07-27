@@ -8,7 +8,7 @@ I want to be command line accessable, have a repo stored somewhere and there are
 If you wish to use this repo as your dot files, clone it somewhere in your home. This is how I would source this in your .zshrc. You may have to install trash cli or rmtrash if you are a Mac user. But by all means please use this method to source (Similar to Zprezto). 
 
 	if [[ -s "${ZDOTDIR:-$HOME}/<path-to-your-cloned>/zorro/init.zsh" ]]; then
-	   source "${ZDOTDIR:-$HOME}/<path-to-your-cloned>//zorro/init.zsh"
+	   source "${ZDOTDIR:-$HOME}/<path-to-your-cloned>/zorro/init.zsh"
 	fi
 
 This should give you my dev tools on any machine where you have zsh installed.

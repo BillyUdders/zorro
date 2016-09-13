@@ -1,5 +1,4 @@
 # Arch linux with systemd aliases and pacaur aliases
-if [[ "$LSB_DISTRIBUTOR" == "archlinux" ]]; then
     # statements
     alias ctl='sudo systemctl '
     alias feierabend='sudo systemctl start poweroff.target'
@@ -40,5 +39,3 @@ if [[ "$LSB_DISTRIBUTOR" == "archlinux" ]]; then
         alias painsd='pacaur -S --asdeps'        # Install given package(s) as dependencies of another package
         alias pamir='pacaur -Syy'                # Force refresh of all package lists after updating /etc/pacman.d/mirrorlist
     fi
-fi
-
